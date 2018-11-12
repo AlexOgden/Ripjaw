@@ -1,0 +1,3 @@
+[submodule "Ripjaw/spdlog"]
+	path = Ripjaw/spdlog
+	url = https://github.com/gabime/spdlog
