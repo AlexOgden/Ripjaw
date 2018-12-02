@@ -9,3 +9,5 @@
 #else
 	#error Ripjaw provides support for Windows only!
 #endif
+
+#define BIT(x) (1 << x)
