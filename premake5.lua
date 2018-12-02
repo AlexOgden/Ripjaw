@@ -26,6 +26,7 @@ project "Ripjaw"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/spdlog/include;"
 	}
 

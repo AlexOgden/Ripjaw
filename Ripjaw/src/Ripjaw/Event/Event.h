@@ -1,6 +1,6 @@
 #pragma once
 
-#include "src/Ripjaw/Core.h"
+#include "Ripjaw/Core.h"
 
 #include <string>
 #include <functional>

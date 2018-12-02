@@ -4,8 +4,8 @@
     <Filter Include="Ripjaw">
       <UniqueIdentifier>{924FD1CE-7EF1-FBA4-67AC-0FF953ED82F5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Ripjaw\Events">
-      <UniqueIdentifier>{ef47c6b9-bfac-4c50-9837-108c64dc02e3}</UniqueIdentifier>
+    <Filter Include="Ripjaw\Event">
+      <UniqueIdentifier>{6a23cb8a-0dad-42ee-870a-b9b96f7f5252}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -22,9 +22,7 @@
     <ClInclude Include="src\Ripjaw\Log.h">
       <Filter>Ripjaw</Filter>
     </ClInclude>
-    <ClInclude Include="Event.h">
-      <Filter>Ripjaw\Events</Filter>
-    </ClInclude>
+    <ClInclude Include="src\Ripjaw\Event\Event.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ripjaw\Application.cpp">
