@@ -58,7 +58,7 @@ namespace Ripjaw {
 		{}
 
 		template<typename T>
-		bool Dispace(EventFn<T> func)
+		bool Dispatch(EventFn<T> func)
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{

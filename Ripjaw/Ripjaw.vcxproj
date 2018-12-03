@@ -146,7 +146,8 @@
     <ClInclude Include="src\Ripjaw\Application.h" />
     <ClInclude Include="src\Ripjaw\Core.h" />
     <ClInclude Include="src\Ripjaw\EntryPoint.h" />
-    <ClInclude Include="src\Ripjaw\Event\Event.h" />
+    <ClInclude Include="src\Ripjaw\Events\Event.h" />
+    <ClInclude Include="src\Ripjaw\Events\KeyEvent.h" />
     <ClInclude Include="src\Ripjaw\Log.h" />
   </ItemGroup>
   <ItemGroup>
