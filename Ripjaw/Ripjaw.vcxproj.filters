@@ -24,6 +24,7 @@
     </ClInclude>
     <ClInclude Include="src\Ripjaw\Events\Event.h" />
     <ClInclude Include="src\Ripjaw\Events\KeyEvent.h" />
+    <ClInclude Include="src\Ripjaw\Events\ApplicationEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ripjaw\Application.cpp">
