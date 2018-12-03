@@ -149,6 +149,7 @@
     <ClInclude Include="src\Ripjaw\Events\ApplicationEvent.h" />
     <ClInclude Include="src\Ripjaw\Events\Event.h" />
     <ClInclude Include="src\Ripjaw\Events\KeyEvent.h" />
+    <ClInclude Include="src\Ripjaw\Events\MouseEvent.h" />
     <ClInclude Include="src\Ripjaw\Log.h" />
   </ItemGroup>
   <ItemGroup>
