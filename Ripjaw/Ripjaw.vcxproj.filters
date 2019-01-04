@@ -4,8 +4,8 @@
     <Filter Include="Ripjaw">
       <UniqueIdentifier>{924FD1CE-7EF1-FBA4-67AC-0FF953ED82F5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Ripjaw\Event">
-      <UniqueIdentifier>{6a23cb8a-0dad-42ee-870a-b9b96f7f5252}</UniqueIdentifier>
+    <Filter Include="Ripjaw\Events">
+      <UniqueIdentifier>{368363B3-A243-DFE9-6B7E-2867D7FD23C6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,13 +19,22 @@
     <ClInclude Include="src\Ripjaw\EntryPoint.h">
       <Filter>Ripjaw</Filter>
     </ClInclude>
+    <ClInclude Include="src\Ripjaw\Events\ApplicationEvent.h">
+      <Filter>Ripjaw\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ripjaw\Events\Event.h">
+      <Filter>Ripjaw\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ripjaw\Events\KeyEvent.h">
+      <Filter>Ripjaw\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Ripjaw\Events\MouseEvent.h">
+      <Filter>Ripjaw\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Ripjaw\Log.h">
       <Filter>Ripjaw</Filter>
     </ClInclude>
-    <ClInclude Include="src\Ripjaw\Events\Event.h" />
-    <ClInclude Include="src\Ripjaw\Events\KeyEvent.h" />
-    <ClInclude Include="src\Ripjaw\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Ripjaw\Events\MouseEvent.h" />
+    <ClInclude Include="src\rjpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ripjaw\Application.cpp">
@@ -34,5 +43,6 @@
     <ClCompile Include="src\Ripjaw\Log.cpp">
       <Filter>Ripjaw</Filter>
     </ClCompile>
+    <ClCompile Include="src\rjpch.cpp" />
   </ItemGroup>
 </Project>

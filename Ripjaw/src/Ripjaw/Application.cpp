@@ -1,3 +1,4 @@
+#include "rjpch.h"
 #include "Application.h"
 
 namespace Ripjaw

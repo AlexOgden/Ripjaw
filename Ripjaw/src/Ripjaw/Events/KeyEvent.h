@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Ripjaw {
 
 	class RIPJAW_API KeyEvent : public Event

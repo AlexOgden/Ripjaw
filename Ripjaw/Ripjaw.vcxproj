@@ -75,7 +75,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>rjpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>RJ_PLATFORM_WINDOWS;RJ_BUILD_DLL;RJ_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;spdlog\include;;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -95,7 +96,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>rjpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>RJ_PLATFORM_WINDOWS;RJ_BUILD_DLL;RJ_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;spdlog\include;;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -119,7 +121,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>rjpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>RJ_PLATFORM_WINDOWS;RJ_BUILD_DLL;RJ_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;spdlog\include;;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -151,10 +154,14 @@
     <ClInclude Include="src\Ripjaw\Events\KeyEvent.h" />
     <ClInclude Include="src\Ripjaw\Events\MouseEvent.h" />
     <ClInclude Include="src\Ripjaw\Log.h" />
+    <ClInclude Include="src\rjpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ripjaw\Application.cpp" />
     <ClCompile Include="src\Ripjaw\Log.cpp" />
+    <ClCompile Include="src\rjpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,3 +1,4 @@
+#include "rjpch.h"
 #include "Log.h"
 
 namespace Ripjaw {

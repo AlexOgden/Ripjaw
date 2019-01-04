@@ -18,6 +18,9 @@ project "Ripjaw"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "rjpch.h"
+	pchsource "Ripjaw/src/rjpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

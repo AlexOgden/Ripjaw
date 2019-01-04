@@ -4,8 +4,6 @@
 #include "spdlog/spdlog.h"
 #include "spdlog/sinks/stdout_color_sinks.h"
 
-#include <memory>
-
 namespace Ripjaw {
 	class RIPJAW_API Log
 	{

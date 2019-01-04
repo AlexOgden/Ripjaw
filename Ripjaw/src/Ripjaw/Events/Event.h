@@ -2,9 +2,6 @@
 
 #include "Ripjaw/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Ripjaw {
 
 	enum class EventType
