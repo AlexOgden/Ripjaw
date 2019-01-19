@@ -10,6 +10,11 @@ workspace "Ripjaw"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Ripjaw/GLFW/include"
+
+include "Ripjaw/GLFW"
+
 project "Ripjaw"
 	location "Ripjaw"
 	kind "SharedLib"
@@ -30,7 +35,13 @@ project "Ripjaw"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/spdlog/include;"
+		"%{prj.name}/spdlog/include;",
+		"%{IncludeDir.GLFW}"
+	}
+	
+	links 
+	{ 
+		"GLFW"
 	}
 
 	filter "system:windows"
@@ -38,11 +49,11 @@ project "Ripjaw"
 		staticruntime "On"
 		systemversion "latest"
 
-		defines
-		{
-			"RJ_PLATFORM_WINDOWS",
-			"RJ_BUILD_DLL"
-		}
+	defines
+	{
+		"RJ_PLATFORM_WINDOWS",
+		"RJ_BUILD_DLL"
+	}
 
 	postbuildcommands
 	{
@@ -90,10 +101,10 @@ project "Sandbox"
 		staticruntime "On"
 		systemversion "latest"
 
-		defines
-		{
-			"RJ_PLATFORM_WINDOWS"
-		}
+	defines
+	{
+		"RJ_PLATFORM_WINDOWS"
+	}
 
 
 	filter "configurations:Debug"
