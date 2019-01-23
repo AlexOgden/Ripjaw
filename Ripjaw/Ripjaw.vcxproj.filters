@@ -35,6 +35,8 @@
       <Filter>Ripjaw</Filter>
     </ClInclude>
     <ClInclude Include="src\rjpch.h" />
+    <ClInclude Include="src\Ripjaw\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Ripjaw\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Ripjaw</Filter>
     </ClCompile>
     <ClCompile Include="src\rjpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>
